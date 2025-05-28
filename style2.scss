@@ -1,0 +1,18 @@
+$myfont:helvetica,sans-serif;
+$mycolor:blue;
+$myfontsize: 1em;
+body
+{
+    font-family: $myfont;
+    background-color: $mycolor;
+    font-size: $myfontsize;
+}
+th
+ {   color: $mycolor;
+    border: 2px solid blue ;
+}
+td,tr
+{
+    color: $mycolor;
+    border: 2px solid $mycolor;
+}

@@ -1,0 +1,13 @@
+#wrapper
+{
+    width: 400px;
+    height: 300px;
+    background-color: yellowgreen;
+    padding: 20px;
+    margin: 10px;
+}
+#result
+{
+    background-color: aliceblue;
+    color: black;
+}

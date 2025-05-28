@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style100.css ">
+    <title>Celcius to Fahrenheit </title>
+</head>
+<body>
+<div id="wrapper">
+    <h1 id="Cm to Inch converter"></h1>
+    <div class="celcius">
+        <input type="text"  id="input" placeholder="Enter the celcius value">
+        </div>
+        <div>
+        <button type="submit" onclick="convert()">Convert to Fahrenheit</button>
+        </div>
+        <div id="result">
+
+        </div>
+    <script>
+        function convert()
+        {
+               const celciusVal = Number (document.getElementById("input").value)   
+               const Fahrenheit=(celciusVal*9/5)+32
+               const result = document.getElementById("result")
+                result.innerHTML=Fahrenheit.toFixed(2)+"Fahrenheit"
+        }
+    </script>
+</div>
+</body>
+</html>

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVMS Jewellery Shop</title>
+    <link rel="stylesheet" href="stylesheet02.css">
+</head>
+<body>
+    <div class="navbar">
+        
+    <nav>
+        <ul>
+            <li><a href="#jewelleryshop">JewelleryShop</a></li>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#customers">Customers</a></li>
+            <li><a href="#employees">Employees</a></li>
+            <li><a href="#stock">Stock</a></li>
+            <li><a href="#sales">Sales</a></li>
+            <li><a href="#pawn">Pawn</a></li>
+            <li>Hi Admin<a href="#logout" id="logout">Logout</a></li>
+        </ul>
+    </nav>
+    </div>
+<div id="jewelleryshop">
+    <div class="para1">
+        <p>At AVMS JewelleryShop, we take pride in sourcing only the finest materials, ensuring each piece is crafted with precision and passion. Our artisans blend traditional techniques with modern designs, bringing you jewellery that enhances your style and expresses your unique personality. Every gemstone is handpicked, and every design is thoughtfully created to make you shine.</p>
+    </div>
+    <div class="para2">
+        <p>We believe jewellery is more than an accessory—it’s a symbol of love, success, and unforgettable memories. Our exclusive collections include bridal jewellery, everyday essentials, luxury statement pieces, and customized designs. Whether you prefer timeless classics or contemporary elegance, our showroom and online store offer a seamless experience to help you find the perfect piece.</p>
+    </div>
+    <div class="para3">
+        <p>Step into a world of brilliance and sophistication at AVMS JewelleryShop. From expert craftsmanship to personalized customer service, we are committed to making your jewellery dreams come true. Visit us in-store or online and explore our exquisite collections that redefine elegance.</p>
+    </div>
+<div id="dashboard">
+    <h1 style="color: blue;text-decoration: underline;">Dashboard</h1>
+<h2>💎 Inventory Management</h2>
+<p>- **Stock Availability:** Track gold, diamond, gemstone levels.
+- **Restocking Alerts:** Get notified for low-stock items.
+- **Supplier Management:** View sourcing details and incoming shipments.</p>
+
+<h2>🛍️ Order & Customer Management</h2>
+<p>- **Pending Orders:** Track processing, payments, and shipping status.
+- **Completed Sales:** Record successful transactions.
+- **Refunds & Returns:** Manage requests efficiently.
+- **Customer Wishlist:** Identify frequently saved products.</p>
+
+<h2>📢 Marketing & Social Media</h2>
+<p> **Ongoing Discounts:** Highlight best jewellery deals.
+- **Engagement Metrics:** Monitor likes, shares, and customer reviews.
+- **Ad Campaign Performance:** Analyze promotional effectiveness.
+- **Customer Feedback:** Collect and display ratings and testimonials.</p>
+
+<h2>📈 Business Growth & Trends</h2>
+<p> **Revenue Reports:** Track growth over different periods.
+- **Customer Demographics:** Age groups, preferences, buying behavior.
+- **Popular Jewellery Categories:** Rings, necklaces, bangles, bridal sets.
+- **Peak Shopping Hours:** Optimize promotions based on visitor data.</p>
+<h2> Store Settings & Customization</h2>
+- <p>**Profile & Branding:** Update store details.
+- **Staff Permissions:** Assign roles for employees.
+- **Payment & Billing:** Manage secure transactions.
+- **Website Theme & Appearance:** Customize UI for better experience.
+</p>
+</div>
+
+<div id="customers">
+    <h2 style="color: blue;">Customers</h1>
+    <center>
+        <form >
+        <h2>Add New Customer</h2>
+        <div class="customername">
+            <label for="customername">Customer Name</label><br>
+            <input type="text" ><br>
+        </div>
+        <div class="phonenumber">
+            <label for="phonenumber">PhoneNumber</label><br>
+            <input type="number" required minlength="10" maxlength="10"><br>
+        </div>
+        <div class="address">
+            <label for="address">Address</label><br>
+            <input type="text">
+        </div><br>
+        <button type="submit"> Add Customer</button>
+    </form>
+</center>
+</div>
+<br>
+<div class="customertable">
+    <h2>Customer List</h2>
+    <table>
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>Name</td>
+                <td>Phone</td>
+                <td>Email</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>customer1</td>
+                <td>909898989</td>
+                <td>cus1@gmail.com</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>customer2</td>
+                <td>9098979787</td>
+                <td>cus2@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+<br>
+
+</div>
+    <div id="employees">
+        <h2 style="color: blue;" >Employees</h2> 
+        <form action="#">
+            <h3 style="color: blue; text-align: center;">Add New Employee</h3><br>
+            <div class="employee">
+                <label for="employee">Employee Name</label><br>
+                <input type="text" ><br>
+            </div>
+            <div class="role">
+                <label for="role"> Role/Position</label><br>
+                <input type="text"><br>
+            </div>
+            <div class="contact">
+                <label for="phone">Phone</label>
+                <input type="number"> 
+                <label for="email">Email</label>
+                <input type="email">  
+            </div><br>
+            <div class="addemoloyee">
+                <button type="submit">Add Employee</button>
+            </div><br> 
+        </form>
+
+    </div><br>
+    <br>
+    <div id="attendence">
+        <form action="#">
+            <h2 style="color: blue; text-align: center;">Mark Attendence</h2>
+            <div class="person">
+                <label for="Employee">Employee</label><br>
+                <select name="Person" id="emp">
+                <option value="person1">Person1</option>
+                <option value="person2">Person2</option>
+                <option value="person3">person3</option>
+                </select>
+            </div>
+            <div class="date">
+                <label for="date">Date<input type="date"></label>
+                <label for="status">Status</label><br>
+                <select name="status" id="attendence">
+                    <option value="present">Present</option>
+                    <option value="absent">Absent</option>
+                </select>
+            </div>
+            <div class="markattendence">
+                <button type="submit">Mark Attendence</button>
+
+
+            </div>
+        </form>
+        <br>
+        <br>
+        <div class="employeelist">
+            <h2>Employee List</h2>
+            <table>
+                <thead>
+                    <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Role</th>
+                            <th>Phone</th>
+                            <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>Person1</td>
+                        <td>Salesman</td>
+                        <td>7890321654</td>
+                        <td>person1@gmail.com</td>                    
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="salary">
+        <h2>Employee salary Calculation</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>EmployeeName</th>
+                    <th>Total Days present</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>person1</td>
+                    <td>20</td>
+                    <td>15000</td>
+                </tr>
+                <tr>
+                    <td>person2</td>
+                    <td>15</td>
+                    <td>10000</td>
+                </tr>
+            </tbody>
+        </table>
+    </div><br>
+    <br>
+    <div id="stock">
+       
+        <form action="#">
+             <h2 style="color: blue;">Add Stock Item</h2>
+            <div class="Item">
+            <label for="Item">Item</label>
+            <input type="text">
+        </div>
+        <div class="Category">
+            <label for="Category">Category</label>
+            <select name="Category" id="category">
+                <option value="Gold">Gold</option>
+                <option value="Silver">Silver</option>
+                <option value="Diamond">Diamond</option>
+            </select>
+        </div>
+        <div class="weight">
+            <label for="weight">Weight(g)</label>
+            <input type="text">
+            <label for="Price">Price</label>
+            <input type="text" >
+            <label for="Quantity">Quantity</label>
+            <input type="number">
+        </div>
+        <div class="btnadd">
+            <button type="submit">Add Stock</button>
+
+        </div>
+        </form>
+        <div class="stocklist">
+            <h3>Stock List</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Category</th>
+                        <th>Weight(g)</th>
+                        <th>Price</th>
+                        <th>Qty</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>Golden Ring</td>
+                        <td>Gold</td>
+                        <td>20.5</td>
+                        <td>54650.00</td>
+                        <td>10</td>
+                        <td>5465000.00</td>
+                    </tr>
+                    <tr>
+                        <td>02</td>
+                        <td>Silver ring</td>
+                        <td>Silver</td>
+                        <td>12</td>
+                        <td>5500.00</td>
+                        <td>10</td>
+                        <td>70000.00</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
+    </div><br>
+    <br>
+    <div id="sales">
+        <form action="#">
+            <h2>Record New Sale</h2>
+            <div>
+                <label for="Customer">Customer</label>
+                <input type="text" style="display: block;">
+                <label for="item">Item</label>
+                <select name="item" id="item">
+                    <option value="gold">Gold</option>
+                    <option value="silver">Silver</option>
+                    <option value="diamond">Diamond</option>
+                </select>
+            </div>
+            <div class="sell">
+                <label for="qty">Qty</label>
+                <input type="number" >
+                <label for="Unitprice">UnitPrice</label>
+                <input type="text">
+                <label for="total">Total</label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="date">Date</label>
+                <input type="date">
+            </div><br>
+            <div>
+                <center><button type="submit">Add Sale</button></center>
+
+            </div>
+        </form>
+        <br>
+    </div>
+    <div id="pawn">
+
+
+        <div class="Currentpawnitems">
+            <h2>Current Pawn Items</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cust.</th>
+                        <th>Description</th>
+                        <th>Loan</th>
+                        <th>Rate Of Intrest</th>
+                        <th>1 mon.int</th>
+                        <th>Over all int </th>
+                        <th>DueDate</th>
+                        <th>Plegged on</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>22 ct Gold Chain</td>
+                        <td>30000.00</td>
+                        <td>2.0%</td>
+                        <td>600.00</td>
+                        <td>-18.7</td>
+                        <td>2025-08-18</td>
+                        <td>2025-08-17  22:10:08</td>
+                    </tr>
+                    <tr>
+                         <td>2</td>
+                        <td>Ring</td>
+                        <td>20000.00</td>
+                        <td>2.0%</td>
+                        <td>400.00</td>
+                        <td>-3.83</td>
+                        <td>2025-06-19</td>
+                        <td>2025-08-17  20:10:08</td>
+                    </tr>
+                    <tr>
+                         <td>2</td>
+                        <td>Gold ring</td>
+                        <td>20000.00</td>
+                        <td>2.0%</td>
+                        <td>400.00</td>
+                        <td>-3.83</td>
+                        <td>2025-08-18</td>
+                        <td>2025-08-17  22:10:08</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div><br>
+    <br>
+    <div class="redeempawnitem" style="text-align: center;">
+        <h2>Redeem Pawn Item</h2>
+        <form action="#">
+            <label for="search">Search Customer</label>
+            <input type="text">
+            <button type="submit">Search</button>
+
+        </form><br>
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Description</th>
+                    <th>Loan</th>
+                    <th>Rate % mon</th>
+                    <th>Accurred Intrest</th>
+                    <th>Total pay</th>
+                    <th>Plegged on</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <td>1</td>
+                <td>22k Gold chain</td>
+                <td>30000.00</td>
+                <td>2.00%</td>
+                <td>-18.7</td>
+                <td>29981.17</td>
+                <td>2025-05-19 22:06:17</td>
+                <td>Redeem</td>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
