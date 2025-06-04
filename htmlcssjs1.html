@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style100.css ">
-    <title>Celcius to Fahrenheit </title>
+    <title>Javasample</title>
+    <link rel="stylesheet" href="htmlcssjs1.css">
 </head>
 <body>
 <div id="wrapper">
-    <h1 id="Celcius to Fahrenheit converter"></h1>
-    <div class="celcius">
-        <input type="text"  id="input" placeholder="Enter the celcius value">
+    <h1>Cm to Inch converter</h1>
+    <div class="centimeter">
+        <input type="text"  id="input" placeholder="Enter the cm value">
         </div>
         <div>
         <button type="submit" onclick="convert()">Convert to Fahrenheit</button>
@@ -18,15 +18,17 @@
         <div id="result">
 
         </div>
+        <br>
     <script>
         function convert()
         {
-               const celciusVal = Number (document.getElementById("input").value)   
-               const Fahrenheit=(celciusVal*9/5)+32
+               const cmVal = Number (document.getElementById("input").value)   
+               const Inch=cmVal/2.8
                const result = document.getElementById("result")
-                result.innerHTML=Fahrenheit.toFixed(2)+"Fahrenheit"
+                result.innerHTML=Inch.toFixed(2)+"Inches"
         }
     </script>
-</div>/
+
+    </div>
 </body>
 </html>
