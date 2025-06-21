@@ -10,10 +10,31 @@
     <span id="value"></span>
     <form action="">
         <input type="number" id="nVal" required placeholder="Enter numbers you want ">
-        <button onclick="febbonacci()">Get Series</button>
+        <button onclick="fibbonacci()">Get Series</button>
     </form>
-    
     <script>
+        // Prompt the user for the number of Fibonacci terms
+
+
+function fibbonacci()
+{
+    let n = Number(document.getElementById("nVal").value)
+
+let a = 0, b = 1;
+
+
+for (let i = 1; i <= n; i++) 
+  console.log(a);
+ { nextTerm = a + b;
+  a = b;
+  b = nextTerm;}
+  
+}
+console.log("nextTerm");  
+
+    </script>
+    
+    <!-- <script>
         function febbonacci(n)
         {
             const feb=[0,1]
@@ -26,7 +47,7 @@
         document.getElementById("value").innerHTML= feb;
         const result = document.getElementById("result")
                 result.innerHTML=feb;
-    </script>
+    </script> -->
 
 </body>
 

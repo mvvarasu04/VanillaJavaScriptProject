@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fizzbuzz</title>
+</head>
+<body>
+    <h1>This is for checking famous fizzbuzz function</h1>
+    
+    <p id="val"></p>
+
+</body>
+    <script>
+         const output=fizzbuzz(10);
+         
+            console.log(output);
+
+            function fizzbuzz(input)
+            {
+                if(typeof input !=="number")
+                return "Not a number";
+
+                if((input%3===0)&&(input%5===0))
+                return "fizzbuzz";
+
+                if(input%3===0)
+                return"fizz";
+
+                if(input%5===0)
+                return "buzz";
+
+                return input;
+            }
+            document.getElementById("val").innerHTML=output;
+    </script>
+    
+</html>

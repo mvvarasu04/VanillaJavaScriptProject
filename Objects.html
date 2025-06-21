@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Objects</h1>
+    <p id="val"></p>
+
+    <script>
+        let car = {
+    name:"FERRARI",
+    color:"Black",
+    model:2020
+};
+    car.name="Lambhorgini"
+    console.log(car.name);
+    // Array
+         let selectedCars=["Thar","Fortuner","Scorpio","Innova Crysta"]
+            console.log(selectedCars);
+        selectedCars[4]="Safari";
+            console.log(selectedCars.length);
+
+            let points=110;
+            let type=points>100 ?"gold":"silver";
+            console.log(type)
+            document.getElementById("val").innerHTML="Customer belongs to category:"+type;
+
+            let time=12;
+            let wish= time>=10 ? "nice day" : "Good night";
+            console.log(wish);
+            
+
+            var a=10;
+            var b=5;
+            var c=a; 
+            var a=b;
+            var b=c;
+            console.log(a,b)
+
+
+            let hour=19
+            if(hour >=6 && hour<12 ){ console.log("Good Morning");}
+           else if(hour>=12 && hour<17){console.log("Good Afternoon");}
+           else if(hour>=17 && hour<20){console.log("Good Evening");}        
+                else{console.log("Good Day")}
+
+            let l=10;
+            let m=15;
+        
+            if(l>m)
+            {
+                console.log("l is greater than m");
+            }
+            else{
+                console.log("l is less than m")
+            }
+
+            console.log(isLanscape(500,800))
+            function isLanscape(width,height){
+                return (width>height) ;
+            }
+            
+            // const output=fizzbuzz(8);
+            // console.log(output);
+            // function fizzbuzz(input)
+            
+            // {
+            //     if(typeof input !=='number')
+            //     return "Not a number";
+                
+            //     if((input % 3===0)&&(input % 5===0))
+            //     return "fizzbuzz";
+
+            //     if(input%3 ===0)
+            //     return"fizz";
+
+            //     if(input%5===0)
+            //     return"buzz";
+                
+            //     return input;
+    
+            // }
+            
+           
+    </script> 
+</body>
+</html>
